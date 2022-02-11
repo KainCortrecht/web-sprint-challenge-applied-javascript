@@ -3,8 +3,10 @@ import axios from 'axios';
 const Tabs = (topics) => {
   const topicsCard = document.createElement('div');
   topics.forEach(item => {
-    const tabs = document.createElement('div')
+    const tabs = document.createElement('div');
     tabs.textContent = item;
+    tabs.classList.add('tab');
+    topicsCard.appendChild(tabs);
   })
   return topicsCard;
   // TASK 3
