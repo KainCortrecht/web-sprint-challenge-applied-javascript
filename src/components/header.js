@@ -1,16 +1,16 @@
 const Header = (title, date, temp) => {
-  const header = document.createElement('div');
-  const dates = document.createElement('span');
-  const headTitle = document.createElement('h1');
-  const temps = document.createElement('span');
+  const header = document.createElement("div");
+  const dates = document.createElement("span");
+  const headTitle = document.createElement("h1");
+  const temps = document.createElement("span");
 
   dates.textContent = date;
   headTitle.textContent = title;
   temps.textContent = temp;
 
-  header.classList.add('header');
-  dates.classList.add('date');
-  temps.classList.add('temp');
+  header.classList.add("header");
+  dates.classList.add("date");
+  temps.classList.add("temp");
 
   header.append(dates);
   header.append(headTitle);
@@ -32,6 +32,16 @@ const Header = (title, date, temp) => {
 };
 
 const headerAppender = (selector) => {
+  const today = new Date();
+  document.querySelector(selector).append(
+    Header(
+      `${today.getMonth()}\\
+       ${today.getDay()}\\
+       ${today.getFullYear()}`,
+      "Life",
+      "Today"
+    )
+  );
   // TASK 2
   // ---------------------
   // Implement this function taking a css selector as its only argument.
