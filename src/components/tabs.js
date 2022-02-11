@@ -1,4 +1,12 @@
+import axios from 'axios';
+
 const Tabs = (topics) => {
+  const topicsCard = document.createElement('div');
+  topics.forEach(item => {
+    const tabs = document.createElement('div')
+    tabs.textContent = item;
+  })
+  return topicsCard;
   // TASK 3
   // ---------------------
   // Implement this function which takes an array of strings ("topics") as its only argument.
