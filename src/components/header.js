@@ -35,11 +35,9 @@ const headerAppender = (selector) => {
   const today = new Date();
   document.querySelector(selector).append(
     Header(
-      `${today.getMonth()}\\
-       ${today.getDay()}\\
-       ${today.getFullYear()}`,
-      "Life",
-      "Today"
+      `Lambda Times`,
+      `${today}`,
+      '26F'
     )
   );
   // TASK 2
