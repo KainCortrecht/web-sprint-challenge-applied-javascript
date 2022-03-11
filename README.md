@@ -66,6 +66,6 @@ when any sort of manipulation happens to a page
 3. What is an event listener?
 They represent and wait for an event to occur.
 4. Why would we convert a NodeList into an Array?
-
+To be able to use certain array methods.
 5. What is a component?
 Allow you create reuseable elements.
